@@ -54,11 +54,11 @@ module.exports = {
   treeForStyles: function treeForStyles(tree) {
     var styleTrees = [];
 
-    if (this.app.project.findAddonByName('ember-cli-less')) {
-      var lessTree = new Funnel(path.join(this.app.bowerDirectory, 'bootstrap/less'), {
+    if (this.app.project.findAddonByName('ember-cli-sass')) {
+      var sassTree = new Funnel(path.join(this.app.bowerDirectory, 'bootstrap/sass'), {
         destDir: 'ember-bootstrap'
       });
-      styleTrees.push(lessTree);
+      styleTrees.push(sassTree);
     }
     
     if (tree) {
