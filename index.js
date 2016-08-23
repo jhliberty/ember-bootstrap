@@ -55,7 +55,7 @@ module.exports = {
     var styleTrees = [];
 
     if (this.app.project.findAddonByName('ember-cli-sass')) {
-      var sassTree = new Funnel(path.join(this.app.bowerDirectory, 'bootstrap/sass'), {
+      var sassTree = new Funnel(path.join(this.app.bowerDirectory, 'bootstrap/scss'), {
         destDir: 'ember-bootstrap'
       });
       styleTrees.push(sassTree);
